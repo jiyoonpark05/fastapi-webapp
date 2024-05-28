@@ -28,7 +28,7 @@ async def fetch_and_insert_data(file_name, file_path):
                 if header_measurement[key]:
                     record[trimmed_key] = {
                         'unit' : header_measurement[key],
-                        'value': value
+                        'value': float(value.replace(",","."))
                     }
                 elif key == 'Dat/Zeit':
                     date = datetime.strptime(value, '%d.%m.%Y, %H:%M')

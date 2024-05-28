@@ -4,7 +4,7 @@ from datetime import datetime
 
 class UnitValue(BaseModel):
     unit: str
-    value: str
+    value: float
 
 class TurbinRecode(BaseModel):
     id: str = Field(alias="_id")
