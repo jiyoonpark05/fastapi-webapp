@@ -89,7 +89,7 @@ const PowerCurve = () => {
         </select>
         <div className="flex items-center gap-x-2 text-white">
           <p className="text-base">period</p>
-          <div>
+          <div className="lex-shrink-0">
             <DatePicker
               className="w-36 rounded-lg text-black"
               showTimeSelect
@@ -97,7 +97,9 @@ const PowerCurve = () => {
               selected={dateRange.startDate}
               onChange={(date) => handleDateChange(date, "start")}
             />
-            <span className="px-1">~</span>
+          </div>
+          <span className="px-1">~</span>
+          <div className="lex-shrink-0">
             <DatePicker
               className="w-36 rounded-lg text-black"
               showTimeSelect
