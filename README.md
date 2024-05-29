@@ -20,6 +20,8 @@ Backend documentation is available at `http://localhost:8000/docs`
 
 ![API Docs](assets/api_docs.png)
 
+The API provides Turbine records by `Turbine_id`,`start_date`,`end_date`
+
 ### Backend
 
 **Data structure**
@@ -40,8 +42,6 @@ Backend documentation is available at `http://localhost:8000/docs`
   ...
 }
 ```
-
-The API provides Turbine records by `Turbine_id`,`start_date`,`end_date`
 
 ### Frontend
 
