@@ -23,8 +23,6 @@ async def get_turbine_record(
     end_date: Optional[datetime] = Query(None)
 ):
     try:
-        print(f"Received parameters - turbine_id: {turbine_id}, start_date: {start_date}, end_date: {end_date}")
-        
         query = {}
 
         if turbine_id is not None:
