@@ -36,7 +36,7 @@ const SingleLineChart = ({ data }: Props) => {
     <ResponsiveContainer
       width="100%"
       height="100%"
-      minWidth={750}
+      minWidth={740}
       minHeight={500}
     >
       <LineChart
@@ -46,7 +46,9 @@ const SingleLineChart = ({ data }: Props) => {
       >
         <CartesianGrid strokeDasharray="3 3" fill="white" />
         <XAxis
+          type="number"
           dataKey="wind"
+          domain={["auto", "auto"]}
           padding={{ left: 10, right: 10 }}
           label={{
             value: "WIND (m/s)",
@@ -56,7 +58,9 @@ const SingleLineChart = ({ data }: Props) => {
           }}
         />
         <YAxis
+          type="number"
           dataKey="power"
+          domain={["auto", "auto"]}
           label={{
             value: "POWER (kW)",
             offset: 20,
